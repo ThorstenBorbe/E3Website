@@ -1,0 +1,120 @@
+/* =============================================
+   base.css – Reset, Variablen, Typografie, Buttons, Shared helpers
+   ============================================= */
+
+/* ---------- CSS Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ---------- Design Tokens ---------- */
+:root {
+  --navy:       #0d1b4b;
+  --navy-mid:   #142260;
+  --navy-light: #1e3278;
+  --blue:       #2a52b0;
+  --blue-light: #4a80d4;
+  --accent:     #5ab4f8;
+  --green:      #00c97a;
+  --white:      #ffffff;
+  --grey-light: #f0f4fb;
+  --grey-text:  #6b7a99;
+  --text-dark:  #1a2340;
+
+  --font:       'Inter', system-ui, sans-serif;
+  --radius:     12px;
+  --shadow:     0 4px 24px rgba(13,27,75,0.12);
+  --shadow-lg:  0 12px 48px rgba(13,27,75,0.22);
+  --transition: 0.3s ease;
+  --max-width:  1140px;
+}
+
+/* ---------- Base ---------- */
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font);
+  color: var(--text-dark);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a   { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+ul  { list-style: none; }
+
+/* ---------- Layout helpers ---------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Color helpers ---------- */
+.accent { color: var(--accent); }
+.green  { color: var(--green); }
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--accent);
+  color: var(--navy);
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background var(--transition), transform var(--transition);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-primary:hover { background: #7dc8fc; transform: translateY(-2px); }
+
+.btn-secondary {
+  display: inline-block;
+  padding: 13px 32px;
+  border: 2px solid rgba(255,255,255,0.5);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 6px;
+  transition: border-color var(--transition), background var(--transition);
+}
+.btn-secondary:hover { border-color: var(--accent); background: rgba(90,180,248,0.1); }
+
+.btn-full { width: 100%; text-align: center; }
+
+/* ---------- Section header ---------- */
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.section-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--grey-text);
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* ---------- Scroll-reveal animation ---------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

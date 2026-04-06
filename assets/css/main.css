@@ -1,0 +1,13 @@
+/* =============================================
+   main.css – Einstiegspunkt
+   Importiert alle Partial-Dateien in der
+   richtigen Reihenfolge.
+   ============================================= */
+
+@import 'base.css';
+@import 'navbar.css';
+@import 'hero.css';
+@import 'sections.css';
+@import 'shop.css';
+@import 'footer.css';
+@import 'responsive.css';

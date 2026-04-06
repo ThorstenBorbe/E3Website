@@ -1,0 +1,474 @@
+/* =============================================
+   legal.css – Unterseiten (Impressum, Datenschutz, Karriere)
+   ============================================= */
+
+/* ── Page wrapper ─────────────────────────── */
+.legal-page {
+  padding-top: 100px; /* navbar height */
+  min-height: 80vh;
+  background: var(--white);
+}
+
+.legal-container {
+  max-width: 800px;
+  padding: 60px 24px 80px;
+}
+
+/* ── Header ────────────────────────────────── */
+.legal-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.legal-updated {
+  font-size: 0.85rem;
+  color: var(--grey-text);
+  margin-bottom: 48px;
+}
+
+/* ── Sections ──────────────────────────────── */
+.legal-section {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--grey-light);
+  padding-bottom: 32px;
+}
+.legal-section:last-of-type { border-bottom: none; }
+
+.legal-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.legal-section h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 20px 0 8px;
+}
+
+.legal-section p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.legal-section ul {
+  margin: 8px 0 12px 20px;
+  list-style: disc;
+}
+.legal-section ul li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.legal-section a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.legal-section a:hover { color: var(--navy); }
+
+/* ── Back button ───────────────────────────── */
+.legal-back { margin-top: 48px; }
+
+/* ── Footer copy links (index.html) ────────── */
+.footer-copy a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.footer-copy a:hover { color: var(--white); }
+
+/* =============================================
+   Karriere-spezifische Stile
+   ============================================= */
+
+/* Hero */
+.karriere-hero {
+  padding: 140px 0 80px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid, #16286a) 60%, var(--blue) 100%);
+  text-align: center;
+}
+.karriere-hero-inner { max-width: 760px; margin: 0 auto; }
+
+.karriere-hero-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -1.5px;
+  line-height: 1.15;
+  margin: 16px 0 24px;
+}
+
+.karriere-hero-sub {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Warum E3 – Benefit cards */
+.karriere-why { padding: 80px 0; background: var(--grey-light); }
+
+.karriere-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.karriere-benefit {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+}
+
+.kb-icon { font-size: 2rem; margin-bottom: 12px; }
+
+.karriere-benefit h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.karriere-benefit p { font-size: 0.9rem; color: var(--grey-text); line-height: 1.65; }
+
+/* ── Offene Stellen ───────────────────────── */
+.karriere-jobs { padding: 80px 0; background: var(--white); }
+
+.job-filters {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background: var(--grey-light);
+  border: 1px solid rgba(13,27,75,0.1);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.job-filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.job-filter-field label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--grey-text);
+  font-weight: 700;
+}
+
+.job-filter-field select {
+  border: 1.5px solid rgba(13,27,75,0.2);
+  background: var(--white);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.jobs-empty {
+  margin: 0 0 20px;
+  font-size: 0.9rem;
+  color: var(--grey-text);
+}
+
+.jobs-list { display: flex; flex-direction: column; gap: 24px; margin-bottom: 48px; }
+
+.job-card {
+  border: 1.5px solid rgba(13,27,75,0.1);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+.job-card:hover { box-shadow: var(--shadow-lg); border-color: var(--accent); }
+
+.job-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.job-card-head h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.job-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.job-tag {
+  background: var(--grey-light);
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.job-tag-dept { background: rgba(42,82,176,0.12); color: var(--blue); }
+
+.job-apply-btn { white-space: nowrap; flex-shrink: 0; padding: 10px 20px; font-size: 0.875rem; }
+
+.job-card p { font-size: 0.9rem; color: var(--grey-text); line-height: 1.7; margin-bottom: 16px; }
+
+.job-requirements { margin: 0 0 0 18px; list-style: disc; }
+.job-requirements li { font-size: 0.875rem; color: var(--text-dark); line-height: 1.75; }
+
+/* Initiativbewerbung box */
+.job-initiative {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  text-align: center;
+  color: var(--white);
+}
+.job-initiative h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 12px; }
+.job-initiative p  { font-size: 0.95rem; opacity: 0.8; margin-bottom: 28px; }
+.job-initiative .btn-secondary {
+  background: rgba(255,255,255,0.15);
+  color: var(--white);
+  border-color: rgba(255,255,255,0.5);
+}
+.job-initiative .btn-secondary:hover { background: rgba(255,255,255,0.25); }
+
+/* ── Bewerbungsprozess ───────────────────── */
+.karriere-process { padding: 80px 0; background: var(--grey-light); }
+
+.process-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.process-step {
+  flex: 1;
+  min-width: 160px;
+  max-width: 220px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.process-number {
+  width: 52px;
+  height: 52px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.process-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.process-step p  { font-size: 0.85rem; color: var(--grey-text); line-height: 1.6; }
+.process-step a  { color: var(--blue); text-decoration: underline; }
+
+.process-connector {
+  flex: 0 0 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--navy), var(--blue));
+  align-self: center;
+  margin-top: -20px;
+}
+
+/* ── Bewerbung Modal ─────────────────────── */
+body.modal-open {
+  overflow: hidden;
+}
+
+.application-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+
+.application-modal[hidden] {
+  display: none;
+}
+
+.application-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 15, 43, 0.65);
+}
+
+.application-modal-dialog {
+  position: relative;
+  width: min(760px, calc(100% - 32px));
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lg);
+  padding: 28px;
+}
+
+.application-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: var(--grey-light);
+  color: var(--navy);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.application-modal-dialog h3 {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.application-subtitle {
+  color: var(--grey-text);
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.application-position {
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+  color: var(--text-dark);
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.application-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.application-grid.two-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.application-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.application-field label {
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.application-field input {
+  border: 1.5px solid rgba(13,27,75,0.2);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.percentage-input {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid rgba(13,27,75,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.percentage-input input {
+  border: none;
+  flex: 1;
+}
+
+.percentage-input input:focus {
+  outline: none;
+}
+
+.percent-suffix {
+  background: var(--grey-light);
+  color: var(--grey-text);
+  font-weight: 700;
+  padding: 10px 12px;
+  border-left: 1px solid rgba(13,27,75,0.15);
+}
+
+.application-field small {
+  font-size: 0.75rem;
+  color: var(--grey-text);
+}
+
+.application-hint {
+  font-size: 0.8rem;
+  color: var(--grey-text);
+  margin-top: 4px;
+}
+
+.application-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.application-notice {
+  font-size: 0.88rem;
+  margin: 0;
+  color: var(--grey-text);
+}
+
+.application-notice.error {
+  color: #b42318;
+}
+
+.application-notice.success {
+  color: #027a48;
+}
+
+/* ── Responsive ─────────────────────────── */
+@media (max-width: 900px) {
+  .karriere-benefits-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .karriere-benefits-grid { grid-template-columns: 1fr; }
+  .job-filters               { flex-direction: column; align-items: stretch; }
+  .job-filter-field          { min-width: 0; }
+  .job-card-head            { flex-direction: column; }
+  .job-apply-btn            { width: 100%; text-align: center; }
+  .application-grid.two-cols { grid-template-columns: 1fr; }
+  .application-actions       { flex-direction: column-reverse; }
+  .application-actions .btn-primary,
+  .application-actions .btn-secondary { width: 100%; text-align: center; }
+  .process-connector        { display: none; }
+  .process-steps            { gap: 24px; }
+  .process-step             { max-width: 100%; width: 100%; }
+  .legal-title              { font-size: 2rem; }
+  .legal-container          { padding: 40px 20px 60px; }
+}

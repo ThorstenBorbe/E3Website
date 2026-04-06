@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karriere bei E3 Advanced Technologies GmbH – Werde Teil des Teams hinter blueline. Offene Stellen, Praktika und Initiativbewerbungen." />
+  <title>Karriere – E3 Advanced Technologies GmbH</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/legal.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html#hero" class="nav-logo">
+        <span class="logo-e3">&#8801;3</span>
+        <span class="logo-text">ADVANCED<br><small>TECHNOLOGIES GMBH</small></span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#hero">Start</a></li>
+          <li><a href="index.html#vorteile">Vorteile</a></li>
+          <li><a href="index.html#produkt">Produkte</a></li>
+          <li><a href="index.html#shop">Shop</a></li>
+          <li><a href="index.html#preise">Preise</a></li>
+          <li><a href="karriere.html" class="active">Karriere</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#kontakt" class="btn-nav">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== KARRIERE HERO ===== -->
+  <section class="karriere-hero">
+    <div class="container karriere-hero-inner">
+      <span class="section-eyebrow">Karriere</span>
+      <h1 class="karriere-hero-title">Gestalte die Energiewende mit uns.</h1>
+      <p class="karriere-hero-sub">
+        Bei E3 Advanced Technologies arbeiten wir an einer der wichtigsten Aufgaben unserer Zeit:
+        Energie intelligent, effizient und herstellerunabhängig nutzbar zu machen.
+        Werde Teil eines ambitionierten Teams, das blueline zur führenden Plattform für
+        Energiemanagement in Europa macht.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== WARUM E3 ===== -->
+  <section class="karriere-why">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Warum E3</span>
+        <h2 class="section-title">Was uns als Arbeitgeber ausmacht</h2>
+      </div>
+      <div class="karriere-benefits-grid">
+        <div class="karriere-benefit">
+          <div class="kb-icon">🚀</div>
+          <h3>Start-up-Energie</h3>
+          <p>Kurze Entscheidungswege, echte Verantwortung vom ersten Tag an, direkte Wirkung auf das Produkt.</p>
+        </div>
+        <div class="karriere-benefit">
+          <div class="kb-icon">🌱</div>
+          <h3>Sinnvolle Arbeit</h3>
+          <p>Dein Code, deine Ideen und deine Arbeit helfen, CO₂ einzusparen und die Energiewende voranzutreiben.</p>
+        </div>
+        <div class="karriere-benefit">
+          <div class="kb-icon">🤝</div>
+          <h3>Flache Hierarchien</h3>
+          <p>Ein interdisziplinäres Team aus Ingenieuren, Entwicklern, Kaufleuten und Strategen – offen, direkt, kollegial.</p>
+        </div>
+        <div class="karriere-benefit">
+          <div class="kb-icon">📈</div>
+          <h3>Wachstum &amp; Entwicklung</h3>
+          <p>Weiterbildungsbudget, Konferenzbesuche und regelmäßige Feedback-Gespräche fördern deine Karriere aktiv.</p>
+        </div>
+        <div class="karriere-benefit">
+          <div class="kb-icon">🏠</div>
+          <h3>Flexibles Arbeiten</h3>
+          <p>Remote-freundliche Kultur mit optionalem Büro. Vertrauensarbeitszeit statt Stempeluhr.</p>
+        </div>
+        <div class="karriere-benefit">
+          <div class="kb-icon">⚡</div>
+          <h3>Technologie-Stack</h3>
+          <p>Moderne Tools, Cloud-first, IoT, KI – wir setzen auf Technologien, die wirklich Spaß machen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFENE STELLEN ===== -->
+  <section class="karriere-jobs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Offene Stellen</span>
+        <h2 class="section-title">Aktuelle Stellenangebote</h2>
+        <p class="section-desc">Alle Stellen sind in Vollzeit, Teilzeit und remote möglich – sprich uns an.</p>
+      </div>
+
+      <div class="job-filters" aria-label="Stellen filtern">
+        <div class="job-filter-field">
+          <label for="department-filter">Bereich</label>
+          <select id="department-filter">
+            <option value="all">Alle Bereiche</option>
+            <option value="vertrieb">Vertrieb</option>
+            <option value="marketing">Marketing</option>
+            <option value="engineering">Engineering</option>
+            <option value="einkauf">Einkauf</option>
+            <option value="initiativ">Initiativ</option>
+          </select>
+        </div>
+        <div class="job-filter-field">
+          <label for="mode-filter">Arbeitsmodell</label>
+          <select id="mode-filter">
+            <option value="all">Alle Modelle</option>
+            <option value="remote">Remote</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="vor-ort">Vor Ort</option>
+          </select>
+        </div>
+        <button type="button" class="btn-secondary" id="reset-filters">Filter zurücksetzen</button>
+      </div>
+
+      <p class="jobs-empty" id="jobs-empty" hidden>Keine Stelle für diese Kombination gefunden. Bitte Filter anpassen oder initiativ bewerben.</p>
+
+      <div class="jobs-list">
+
+        <!-- Stelle 1 -->
+        <div class="job-card" data-department="engineering" data-modes="remote,hybrid">
+          <div class="job-card-head">
+            <div>
+              <h3>Embedded Software Engineer (m/w/d)</h3>
+              <div class="job-meta">
+                <span class="job-tag">Vollzeit</span>
+                <span class="job-tag">Remote / hybrid</span>
+                <span class="job-tag job-tag-dept">Engineering</span>
+              </div>
+            </div>
+            <button type="button" class="btn-primary job-apply-btn apply-trigger" data-jobtitle="Embedded Software Engineer (m/w/d)">Jetzt bewerben</button>
+          </div>
+          <p>Du entwickelst Firmware für unsere bluemeter- und bluebox-Hardware auf ARM-Cortex-Basis,
+          integrierst Kommunikationsprotokolle (SML, MQTT, Modbus) und sorgst für stabilen Betrieb
+          in Feld­umgebungen.</p>
+          <ul class="job-requirements">
+            <li>Erfahrung mit C/C++ für Embedded-Systeme</li>
+            <li>Kenntnisse in RTOS (FreeRTOS o.ä.) von Vorteil</li>
+            <li>Begeisterung für Energietechnik und IoT</li>
+          </ul>
+        </div>
+
+        <!-- Stelle 2 -->
+        <div class="job-card" data-department="engineering" data-modes="remote">
+          <div class="job-card-head">
+            <div>
+              <h3>Full-Stack Developer (m/w/d) – Cloud &amp; App</h3>
+              <div class="job-meta">
+                <span class="job-tag">Vollzeit</span>
+                <span class="job-tag">Remote</span>
+                <span class="job-tag job-tag-dept">Engineering</span>
+              </div>
+            </div>
+            <button type="button" class="btn-primary job-apply-btn apply-trigger" data-jobtitle="Full-Stack Developer (m/w/d) – Cloud &amp; App">Jetzt bewerben</button>
+          </div>
+          <p>Du baust und erweiterst die bluesky-Cloud-Plattform und die bluevision-App. Von der
+          REST-API über React/TypeScript bis zum automatisierten Deployment – du gestaltest die
+          Plattform, die unsere Kunden täglich nutzen.</p>
+          <ul class="job-requirements">
+            <li>Kenntnisse in Node.js / TypeScript und React oder Flutter</li>
+            <li>Erfahrung mit Cloud-Infrastruktur (AWS, Azure oder GCP)</li>
+            <li>Clean-Code-Mindset und Freude an Code-Reviews</li>
+          </ul>
+        </div>
+
+        <!-- Stelle 3 -->
+        <div class="job-card" data-department="vertrieb" data-modes="hybrid,vor-ort">
+          <div class="job-card-head">
+            <div>
+              <h3>Sales Manager – Industrie &amp; Gewerbe (m/w/d)</h3>
+              <div class="job-meta">
+                <span class="job-tag">Vollzeit</span>
+                <span class="job-tag">Deutschlandweit</span>
+                <span class="job-tag job-tag-dept">Vertrieb</span>
+              </div>
+            </div>
+            <button type="button" class="btn-primary job-apply-btn apply-trigger" data-jobtitle="Sales Manager – Industrie &amp; Gewerbe (m/w/d)">Jetzt bewerben</button>
+          </div>
+          <p>Du akquirierst und betreust mittelständische Industriekunden, präsentierst blueline-Lösungen
+          und entwickelst langfristige Partnerschaften in der Energie- und Fertigungsbranche.</p>
+          <ul class="job-requirements">
+            <li>Erfahrung im B2B-Vertrieb, idealerweise Energie/Industrie/IoT</li>
+            <li>Kommunikationsstärke und Abschlussorientierung</li>
+            <li>Reisebereitschaft (ca. 30–40 %)</li>
+          </ul>
+        </div>
+
+        <!-- Stelle 4 -->
+        <div class="job-card" data-department="marketing" data-modes="remote,hybrid">
+          <div class="job-card-head">
+            <div>
+              <h3>Werkstudent / Praktikum – Marketing &amp; Content (m/w/d)</h3>
+              <div class="job-meta">
+                <span class="job-tag">Werkstudent / Praktikum</span>
+                <span class="job-tag">Remote / hybrid</span>
+                <span class="job-tag job-tag-dept">Marketing</span>
+              </div>
+            </div>
+            <button type="button" class="btn-primary job-apply-btn apply-trigger" data-jobtitle="Werkstudent / Praktikum – Marketing &amp; Content (m/w/d)">Jetzt bewerben</button>
+          </div>
+          <p>Du unterstützt unser Team bei Social-Media-Content, Case Studies und Website-Texten.
+          Ideal für Studierende der Kommunikations-, Medien- oder Wirtschaftswissenschaften.</p>
+          <ul class="job-requirements">
+            <li>Laufendes Studium (mind. 4. Semester)</li>
+            <li>Schreibtalent und Gespür für digitale Inhalte</li>
+            <li>Interesse an Energie- und Nachhaltigkeitsthemen</li>
+          </ul>
+        </div>
+
+        <!-- Stelle 5 -->
+        <div class="job-card" data-department="einkauf" data-modes="hybrid,vor-ort">
+          <div class="job-card-head">
+            <div>
+              <h3>Strategischer Einkäufer (m/w/d) – Hardware &amp; Komponenten</h3>
+              <div class="job-meta">
+                <span class="job-tag">Vollzeit</span>
+                <span class="job-tag">Hybrid / vor Ort</span>
+                <span class="job-tag job-tag-dept">Einkauf</span>
+              </div>
+            </div>
+            <button type="button" class="btn-primary job-apply-btn apply-trigger" data-jobtitle="Strategischer Einkäufer (m/w/d) – Hardware &amp; Komponenten">Jetzt bewerben</button>
+          </div>
+          <p>Du verantwortest den strategischen Einkauf von Elektronikbauteilen, Gehäusen und
+          Produktionsdienstleistungen und entwickelst belastbare Lieferantenbeziehungen.</p>
+          <ul class="job-requirements">
+            <li>Erfahrung im technischen Einkauf (Elektronik/Industrie)</li>
+            <li>Verhandlungsgeschick und analytische Arbeitsweise</li>
+            <li>Kenntnisse in ERP-/Beschaffungsprozessen</li>
+          </ul>
+        </div>
+
+        <!-- Stelle 6 -->
+        <div class="job-card" data-department="initiativ" data-modes="remote,hybrid,vor-ort">
+          <div class="job-card-head">
+            <div>
+              <h3>Initiativbewerbung (m/w/d)</h3>
+              <div class="job-meta">
+                <span class="job-tag">Vollzeit / Teilzeit</span>
+                <span class="job-tag">Remote / Hybrid / vor Ort</span>
+                <span class="job-tag job-tag-dept">Initiativ</span>
+              </div>
+            </div>
+            <button type="button" class="btn-primary job-apply-btn apply-trigger" data-jobtitle="Initiativbewerbung (m/w/d)">Jetzt bewerben</button>
+          </div>
+          <p>
+            Aktuell ist keine passende Stelle ausgeschrieben. Wenn sich jedoch eine interessante Person
+            bewirbt, ist eine Einstellung bei sehr guter Passung durchaus möglich.
+          </p>
+          <ul class="job-requirements">
+            <li>Motivation, Verantwortung zu übernehmen</li>
+            <li>Interesse an Energie, Digitalisierung und nachhaltigen Lösungen</li>
+            <li>Bereitschaft, in einem dynamischen Umfeld mitzugestalten</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Initiativbewerbung -->
+      <div class="job-initiative">
+        <h3>Kein passendes Angebot dabei?</h3>
+        <p>
+          Wir wachsen schnell und sind immer auf der Suche nach talentierten Menschen.
+          Schick uns deine Initiativbewerbung – wir freuen uns auf dich.
+        </p>
+        <button type="button" class="btn-secondary apply-trigger" data-jobtitle="Initiativbewerbung">Initiativbewerbung senden</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEWERBUNGSPROZESS ===== -->
+  <section class="karriere-process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Bewerbungsprozess</span>
+        <h2 class="section-title">So läuft deine Bewerbung ab</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-number">1</div>
+          <h4>Bewerbungsformular ausfüllen</h4>
+          <p>Daten eintragen und PDF-Dateien für Lebenslauf und Zeugnisse hochladen. Kein Anschreiben notwendig.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-number">2</div>
+          <h4>Kennenlerngespräch</h4>
+          <p>30-minütiges Video-Call mit HR – wir stellen uns vor und hören dir zu</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-number">3</div>
+          <h4>Fachgespräch</h4>
+          <p>Technisches oder fachliches Gespräch mit deinem zukünftigen Team</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-number">4</div>
+          <h4>Angebot &amp; Start</h4>
+          <p>Vertragsangebot innerhalb von 5 Werktagen – willkommen an Bord!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="legal-back" style="text-align:center; padding: 48px 0;">
+    <a href="index.html" class="btn-primary">&larr; Zurück zur Startseite</a>
+  </div>
+
+  <!-- ===== BEWERBUNGS-MODAL ===== -->
+  <div class="application-modal" id="application-modal" hidden>
+    <div class="application-modal-backdrop" id="application-modal-backdrop"></div>
+    <div class="application-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="application-title">
+      <button type="button" class="application-close" id="application-close" aria-label="Fenster schließen">&times;</button>
+      <h3 id="application-title">Bewerbung</h3>
+      <p class="application-subtitle">Bitte fülle die Felder aus. Ein Anschreiben ist nicht erforderlich.</p>
+      <p class="application-position">Stelle: <strong id="application-job-title">Initiativbewerbung</strong></p>
+
+      <form id="application-form" class="application-form" novalidate>
+        <input type="hidden" id="application-position" name="position" />
+
+        <div class="application-grid" id="initiative-role-group" hidden>
+          <div class="application-field">
+            <label for="initiative-role">Für welche Art von Stelle bewerben Sie sich?*</label>
+            <input
+              type="text"
+              id="initiative-role"
+              name="initiative_role"
+              placeholder="z. B. Projektmanagement, Data Science, Einkauf, Vertrieb ..."
+            />
+            <small>Freitextfeld für Initiativbewerbungen</small>
+          </div>
+        </div>
+
+        <div class="application-grid two-cols">
+          <div class="application-field">
+            <label for="vorname">Vorname*</label>
+            <input type="text" id="vorname" name="vorname" required />
+          </div>
+          <div class="application-field">
+            <label for="nachname">Name*</label>
+            <input type="text" id="nachname" name="nachname" required />
+          </div>
+        </div>
+
+        <div class="application-grid">
+          <div class="application-field">
+            <label for="adresse">Adresse*</label>
+            <input type="text" id="adresse" name="adresse" required />
+          </div>
+        </div>
+
+        <div class="application-grid two-cols">
+          <div class="application-field">
+            <label for="plz">PLZ*</label>
+            <input type="text" id="plz" name="plz" pattern="[0-9]{4,5}" required />
+          </div>
+          <div class="application-field">
+            <label for="ort">Ort*</label>
+            <input type="text" id="ort" name="ort" required />
+          </div>
+        </div>
+
+        <div class="application-grid two-cols">
+          <div class="application-field">
+            <label for="telefon">Telefonnummer*</label>
+            <input type="tel" id="telefon" name="telefon" required />
+          </div>
+          <div class="application-field">
+            <label for="email">E-Mail*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="application-grid two-cols">
+          <div class="application-field">
+            <label for="behinderung">Grad der Behinderung (%)</label>
+            <div class="percentage-input">
+              <input type="number" id="behinderung" name="behinderung" min="0" max="100" step="1" />
+              <span class="percent-suffix">%</span>
+            </div>
+            <small>Freiwillige Angabe</small>
+          </div>
+          <div class="application-field">
+            <label for="lebenslauf">Lebenslauf (PDF, ohne Foto, unter 5MB)*</label>
+            <input type="file" id="lebenslauf" name="lebenslauf" accept="application/pdf" required />
+          </div>
+        </div>
+
+        <div class="application-grid">
+          <div class="application-field">
+            <label for="zeugnisse">Zeugnisse (PDF, mehrere möglich, je Datei unter 5MB)</label>
+            <input type="file" id="zeugnisse" name="zeugnisse" accept="application/pdf" multiple />
+          </div>
+        </div>
+
+        <p class="application-hint">Mit dem Absenden erklärst du dich mit der Verarbeitung deiner Daten zum Zweck des Bewerbungsprozesses einverstanden.</p>
+
+        <div class="application-actions">
+          <button type="button" class="btn-secondary" id="application-cancel">Abbrechen</button>
+          <button type="submit" class="btn-primary">Bewerbung absenden</button>
+        </div>
+
+        <p id="application-notice" class="application-notice" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-e3">&#8801;3</span>
+        <span class="footer-brand">E3 Advanced Technologies GmbH</span>
+      </div>
+      <p class="footer-tagline">Strom &middot; Wärme &middot; E-Mobilität intelligent verbunden</p>
+      <div class="footer-links">
+        <a href="index.html">Start</a>
+        <a href="karriere.html">Karriere</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 E3 Advanced Technologies GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+    });
+
+    const deptFilter = document.getElementById('department-filter');
+    const modeFilter = document.getElementById('mode-filter');
+    const resetFilters = document.getElementById('reset-filters');
+    const jobCards = document.querySelectorAll('.job-card[data-department]');
+    const emptyMessage = document.getElementById('jobs-empty');
+
+    function applyFilters() {
+      const selectedDept = deptFilter.value;
+      const selectedMode = modeFilter.value;
+      let visibleCount = 0;
+
+      jobCards.forEach((card) => {
+        const dept = card.dataset.department;
+        const modes = (card.dataset.modes || '').split(',').map((v) => v.trim());
+        const deptMatch = selectedDept === 'all' || dept === selectedDept;
+        const modeMatch = selectedMode === 'all' || modes.includes(selectedMode);
+        const show = deptMatch && modeMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) visibleCount += 1;
+      });
+
+      emptyMessage.hidden = visibleCount !== 0;
+    }
+
+    deptFilter.addEventListener('change', applyFilters);
+    modeFilter.addEventListener('change', applyFilters);
+    resetFilters.addEventListener('click', () => {
+      deptFilter.value = 'all';
+      modeFilter.value = 'all';
+      applyFilters();
+    });
+
+    const modal = document.getElementById('application-modal');
+    const modalBackdrop = document.getElementById('application-modal-backdrop');
+    const modalClose = document.getElementById('application-close');
+    const modalCancel = document.getElementById('application-cancel');
+    const modalTitle = document.getElementById('application-job-title');
+    const modalPosition = document.getElementById('application-position');
+    const applicationForm = document.getElementById('application-form');
+    const applicationNotice = document.getElementById('application-notice');
+    const behinderungInput = document.getElementById('behinderung');
+    const initiativeRoleGroup = document.getElementById('initiative-role-group');
+    const initiativeRoleInput = document.getElementById('initiative-role');
+    const applyButtons = document.querySelectorAll('.apply-trigger');
+
+    function openModal(jobTitle) {
+      modalTitle.textContent = jobTitle;
+      modalPosition.value = jobTitle;
+      applicationNotice.textContent = '';
+      applicationNotice.className = 'application-notice';
+
+      const isInitiative = /initiativ/i.test(jobTitle);
+      initiativeRoleGroup.hidden = !isInitiative;
+      initiativeRoleInput.required = isInitiative;
+      if (!isInitiative) initiativeRoleInput.value = '';
+
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+      modal.hidden = true;
+      document.body.classList.remove('modal-open');
+    }
+
+    applyButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        openModal(btn.dataset.jobtitle || 'Initiativbewerbung');
+      });
+    });
+
+    modalBackdrop.addEventListener('click', closeModal);
+    modalClose.addEventListener('click', closeModal);
+    modalCancel.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.hidden) closeModal();
+    });
+
+    applicationForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const fileInputs = applicationForm.querySelectorAll('input[type="file"]');
+      let invalidFiles = false;
+      let tooLargeFiles = false;
+      const maxFileSize = 5 * 1024 * 1024;
+
+      fileInputs.forEach((input) => {
+        Array.from(input.files).forEach((file) => {
+          if (!file.name.toLowerCase().endsWith('.pdf')) invalidFiles = true;
+          if (file.size > maxFileSize) tooLargeFiles = true;
+        });
+      });
+
+      if (!applicationForm.checkValidity()) {
+        applicationNotice.textContent = 'Bitte fülle alle Pflichtfelder korrekt aus.';
+        applicationNotice.className = 'application-notice error';
+        applicationForm.reportValidity();
+        return;
+      }
+
+      if (invalidFiles) {
+        applicationNotice.textContent = 'Bitte nur PDF-Dateien für Lebenslauf und Zeugnisse hochladen.';
+        applicationNotice.className = 'application-notice error';
+        return;
+      }
+
+      if (tooLargeFiles) {
+        applicationNotice.textContent = 'Bitte nur Dateien unter 5MB hochladen (je Datei).';
+        applicationNotice.className = 'application-notice error';
+        return;
+      }
+
+      applicationNotice.textContent = 'Vielen Dank. Deine Bewerbung wurde erfasst.';
+      applicationNotice.className = 'application-notice success';
+
+      setTimeout(() => {
+        applicationForm.reset();
+        closeModal();
+      }, 900);
+    });
+
+    behinderungInput.addEventListener('input', () => {
+      const value = Number(behinderungInput.value);
+      if (Number.isNaN(value)) return;
+      if (value > 100) behinderungInput.value = '100';
+      if (value < 0) behinderungInput.value = '0';
+    });
+
+    applyFilters();
+  </script>
+</body>
+</html>

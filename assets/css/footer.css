@@ -1,0 +1,64 @@
+/* =============================================
+   footer.css – Footer
+   ============================================= */
+
+.footer {
+  background: #080f2b;
+  color: rgba(255,255,255,0.55);
+  padding: 56px 0 32px;
+  font-size: 0.9rem;
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 28px;
+}
+
+/* Logo block */
+.footer-logo { display: flex; align-items: center; gap: 10px; }
+.footer-brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.5px;
+}
+.footer-tagline {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* Nav links */
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+.footer-links a {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.85rem;
+  transition: color var(--transition);
+}
+.footer-links a:hover { color: var(--white); }
+
+/* Social icons (footer) */
+.footer-social { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.82rem;
+  transition: color var(--transition), transform var(--transition);
+}
+.footer-social-icon svg    { width: 20px; height: 20px; flex-shrink: 0; }
+.footer-social-icon:hover  { color: var(--white); transform: translateY(-2px); }
+
+/* Copyright bar */
+.footer-copy {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.28);
+}

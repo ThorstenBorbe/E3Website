@@ -1,0 +1,114 @@
+/* =============================================
+   navbar.css – Navigation & Social Icons
+   ============================================= */
+
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(13, 27, 75, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: box-shadow var(--transition);
+}
+.navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 70px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+}
+.logo-e3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+}
+.logo-text {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  color: var(--white);
+  opacity: 0.85;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.nav-links a:hover,
+.nav-links a.active { color: var(--accent); }
+
+.btn-nav {
+  padding: 9px 22px;
+  background: var(--accent) !important;
+  color: var(--navy) !important;
+  font-weight: 700 !important;
+  border-radius: 6px;
+  transition: background var(--transition) !important;
+}
+.btn-nav:hover { background: #7dc8fc !important; }
+
+/* Hamburger (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Social Icons – Navbar */
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(255,255,255,0.12);
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: rgba(255,255,255,0.5);
+  border-radius: 6px;
+  transition: color var(--transition), background var(--transition);
+}
+.social-icon:hover {
+  color: var(--accent);
+  background: rgba(90,180,248,0.1);
+}
+.social-icon svg { width: 17px; height: 17px; }
