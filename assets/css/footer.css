@@ -20,7 +20,15 @@
 }
 
 /* Logo block */
-.footer-logo { display: flex; align-items: center; gap: 10px; }
+.footer-logo { display: flex; align-items: center; gap: 12px; }
+.footer-logo-mark {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--white);
+  padding: 3px;
+  object-fit: contain;
+}
 .footer-brand {
   font-size: 1.25rem;
   font-weight: 800;

@@ -24,17 +24,20 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: var(--white);
 }
-.logo-e3 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--accent);
-  line-height: 1;
+.logo-mark {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: var(--white);
+  padding: 3px;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.25);
 }
 .logo-text {
-  font-size: 0.65rem;
+  font-size: 0.63rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.4;

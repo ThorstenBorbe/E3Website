@@ -161,6 +161,9 @@
   const cartClearBtn = document.getElementById('cart-clear');
   const cartCheckoutBtn = document.getElementById('cart-checkout');
   const cartNoteEl = document.getElementById('cart-note');
+  const checkoutSubmitBtn = document.getElementById('checkout-submit');
+  const checkoutEmailEl = document.getElementById('checkout-email');
+  const paymentMethodEls = document.querySelectorAll('input[name="payment-method"]');
 
   if (addToCartButtons.length && cartDrawer) {
     let cart = [];
@@ -246,8 +249,43 @@
         cartNoteEl.textContent = 'Bitte zuerst Artikel in den Warenkorb legen.';
         return;
       }
-      cartNoteEl.textContent = 'Checkout wird vorbereitet. Unser Team meldet sich für den Abschluss.';
+      openCart();
+      cartNoteEl.textContent = 'Bitte Zahlungsart auswählen und Bestellung abschließen.';
     });
+
+    if (checkoutSubmitBtn) {
+      checkoutSubmitBtn.addEventListener('click', () => {
+        if (!cart.length) {
+          cartNoteEl.textContent = 'Bitte zuerst Artikel in den Warenkorb legen.';
+          return;
+        }
+
+        const selectedPayment = Array.from(paymentMethodEls).find((input) => input.checked);
+        if (!selectedPayment) {
+          cartNoteEl.textContent = 'Bitte wählen Sie eine Zahlungsart aus.';
+          return;
+        }
+
+        const checkoutEmail = checkoutEmailEl ? checkoutEmailEl.value.trim() : '';
+        if (!checkoutEmail || !isValidEmail(checkoutEmail)) {
+          cartNoteEl.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse für die Bestellbestätigung an.';
+          if (checkoutEmailEl) checkoutEmailEl.focus();
+          return;
+        }
+
+        const total = cart.reduce((sum, item) => sum + item.price, 0);
+        cartNoteEl.textContent =
+          'Bestellung über ' + selectedPayment.value + ' erfolgreich vorbereitet (' +
+          formatCurrency(total) + '). Bestätigung geht an ' + checkoutEmail + '.';
+
+        cart = [];
+        paymentMethodEls.forEach((input) => {
+          input.checked = false;
+        });
+        if (checkoutEmailEl) checkoutEmailEl.value = '';
+        renderCart();
+      });
+    }
 
     renderCart();
   }

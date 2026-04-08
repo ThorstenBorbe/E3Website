@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" role="img" aria-labelledby="title desc">
+  <title id="title">E3 Advanced Technologies GmbH</title>
+  <desc id="desc">Rundes E3 Firmenlogo mit Schriftzug Advanced Technologies GmbH.</desc>
+  <circle cx="280" cy="280" r="255" fill="none" stroke="#111" stroke-width="6"/>
+
+  <rect x="125" y="120" width="150" height="22" fill="#111"/>
+  <rect x="125" y="190" width="150" height="22" fill="#111"/>
+  <rect x="125" y="260" width="150" height="22" fill="#111"/>
+
+  <path d="M300 130 C300 98 326 78 364 78 C410 78 438 109 438 152 C438 190 414 214 386 221 C421 228 446 257 446 300 C446 360 401 395 349 395 C293 395 256 360 252 311 L295 311 C299 338 317 356 349 356 C383 356 401 334 401 300 C401 264 380 245 334 245 L307 245 L307 206 L334 206 C372 206 393 189 393 158 C393 129 373 115 347 115 C320 115 304 132 300 155 Z" fill="#111"/>
+
+  <line x1="95" y1="335" x2="465" y2="335" stroke="#111" stroke-width="6"/>
+
+  <text x="280" y="392" text-anchor="middle" font-size="40" font-family="Arial, Helvetica, sans-serif" letter-spacing="1.5" fill="#111">ADVANCED</text>
+  <text x="280" y="430" text-anchor="middle" font-size="20" font-family="Arial, Helvetica, sans-serif" letter-spacing="5" fill="#111">TECHNOLOGIES GMBH</text>
+</svg>
